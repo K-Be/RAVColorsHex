@@ -13,7 +13,13 @@
 		49A68F021DEBFB58007F66A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A68F001DEBFB58007F66A0 /* Main.storyboard */; };
 		49A68F041DEBFB58007F66A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A68F031DEBFB58007F66A0 /* Assets.xcassets */; };
 		49A68F071DEBFB58007F66A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A68F051DEBFB58007F66A0 /* LaunchScreen.storyboard */; };
-		49A68F121DEBFB58007F66A0 /* ColorsHexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A68F111DEBFB58007F66A0 /* ColorsHexTests.m */; };
+		49A68F251DEBFB6F007F66A0 /* RAVColorsHex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49A68F221DEBFB6F007F66A0 /* RAVColorsHex.h */; };
+		49A68F2B1DEBFBA5007F66A0 /* UIColor+RAVHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A68F2A1DEBFBA5007F66A0 /* UIColor+RAVHex.m */; };
+		49A68F2E1DEC0D40007F66A0 /* NSString+RAVHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A68F2D1DEC0D40007F66A0 /* NSString+RAVHexString.m */; };
+		49A68F381DEC1AE6007F66A0 /* libRAVColorsHex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A68F201DEBFB6F007F66A0 /* libRAVColorsHex.a */; };
+		49A68F451DEC346F007F66A0 /* libRAVColorsHex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A68F201DEBFB6F007F66A0 /* libRAVColorsHex.a */; };
+		49A68F461DEC350E007F66A0 /* RAVColorsHexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A68F351DEC1AE6007F66A0 /* RAVColorsHexTests.m */; };
+		49A68F471DEC350E007F66A0 /* RAVTColorComparer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A68F3F1DEC1B0F007F66A0 /* RAVTColorComparer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +30,41 @@
 			remoteGlobalIDString = 49A68EF31DEBFB58007F66A0;
 			remoteInfo = ColorsHex;
 		};
+		49A68F391DEC1AE6007F66A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49A68EEC1DEBFB58007F66A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49A68F1F1DEBFB6F007F66A0;
+			remoteInfo = RAVColorsHex;
+		};
+		49A68F411DEC345C007F66A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49A68EEC1DEBFB58007F66A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49A68EF31DEBFB58007F66A0;
+			remoteInfo = ColorsHex;
+		};
+		49A68F431DEC346B007F66A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49A68EEC1DEBFB58007F66A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49A68F1F1DEBFB6F007F66A0;
+			remoteInfo = RAVColorsHex;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49A68F1E1DEBFB6F007F66A0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				49A68F251DEBFB6F007F66A0 /* RAVColorsHex.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		49A68EF41DEBFB58007F66A0 /* ColorsHex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorsHex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,8 +78,18 @@
 		49A68F061DEBFB58007F66A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49A68F081DEBFB58007F66A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49A68F0D1DEBFB58007F66A0 /* ColorsHexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorsHexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49A68F111DEBFB58007F66A0 /* ColorsHexTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorsHexTests.m; sourceTree = "<group>"; };
 		49A68F131DEBFB58007F66A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A68F201DEBFB6F007F66A0 /* libRAVColorsHex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRAVColorsHex.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A68F221DEBFB6F007F66A0 /* RAVColorsHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVColorsHex.h; sourceTree = "<group>"; };
+		49A68F291DEBFBA5007F66A0 /* UIColor+RAVHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RAVHex.h"; sourceTree = "<group>"; };
+		49A68F2A1DEBFBA5007F66A0 /* UIColor+RAVHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RAVHex.m"; sourceTree = "<group>"; };
+		49A68F2C1DEC0D40007F66A0 /* NSString+RAVHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RAVHexString.h"; sourceTree = "<group>"; };
+		49A68F2D1DEC0D40007F66A0 /* NSString+RAVHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RAVHexString.m"; sourceTree = "<group>"; };
+		49A68F331DEC1AE6007F66A0 /* RAVColorsHexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAVColorsHexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A68F351DEC1AE6007F66A0 /* RAVColorsHexTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RAVColorsHexTests.m; path = ../RAVColorsHexTests/RAVColorsHexTests.m; sourceTree = "<group>"; };
+		49A68F371DEC1AE6007F66A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A68F3E1DEC1B0F007F66A0 /* RAVTColorComparer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAVTColorComparer.h; path = ../RAVColorsHexTests/RAVTColorComparer.h; sourceTree = "<group>"; };
+		49A68F3F1DEC1B0F007F66A0 /* RAVTColorComparer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAVTColorComparer.m; path = ../RAVColorsHexTests/RAVTColorComparer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A68F451DEC346F007F66A0 /* libRAVColorsHex.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +105,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A68F1D1DEBFB6F007F66A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A68F301DEC1AE6007F66A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A68F381DEC1AE6007F66A0 /* libRAVColorsHex.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +131,8 @@
 			children = (
 				49A68EF61DEBFB58007F66A0 /* ColorsHex */,
 				49A68F101DEBFB58007F66A0 /* ColorsHexTests */,
+				49A68F211DEBFB6F007F66A0 /* RAVColorsHex */,
+				49A68F341DEC1AE6007F66A0 /* RAVColorsHexTests */,
 				49A68EF51DEBFB58007F66A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +142,8 @@
 			children = (
 				49A68EF41DEBFB58007F66A0 /* ColorsHex.app */,
 				49A68F0D1DEBFB58007F66A0 /* ColorsHexTests.xctest */,
+				49A68F201DEBFB6F007F66A0 /* libRAVColorsHex.a */,
+				49A68F331DEC1AE6007F66A0 /* RAVColorsHexTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,10 +175,32 @@
 		49A68F101DEBFB58007F66A0 /* ColorsHexTests */ = {
 			isa = PBXGroup;
 			children = (
-				49A68F111DEBFB58007F66A0 /* ColorsHexTests.m */,
+				49A68F351DEC1AE6007F66A0 /* RAVColorsHexTests.m */,
+				49A68F3E1DEC1B0F007F66A0 /* RAVTColorComparer.h */,
+				49A68F3F1DEC1B0F007F66A0 /* RAVTColorComparer.m */,
 				49A68F131DEBFB58007F66A0 /* Info.plist */,
 			);
 			path = ColorsHexTests;
+			sourceTree = "<group>";
+		};
+		49A68F211DEBFB6F007F66A0 /* RAVColorsHex */ = {
+			isa = PBXGroup;
+			children = (
+				49A68F221DEBFB6F007F66A0 /* RAVColorsHex.h */,
+				49A68F291DEBFBA5007F66A0 /* UIColor+RAVHex.h */,
+				49A68F2A1DEBFBA5007F66A0 /* UIColor+RAVHex.m */,
+				49A68F2C1DEC0D40007F66A0 /* NSString+RAVHexString.h */,
+				49A68F2D1DEC0D40007F66A0 /* NSString+RAVHexString.m */,
+			);
+			path = RAVColorsHex;
+			sourceTree = "<group>";
+		};
+		49A68F341DEC1AE6007F66A0 /* RAVColorsHexTests */ = {
+			isa = PBXGroup;
+			children = (
+				49A68F371DEC1AE6007F66A0 /* Info.plist */,
+			);
+			path = RAVColorsHexTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +217,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				49A68F441DEC346B007F66A0 /* PBXTargetDependency */,
 			);
 			name = ColorsHex;
 			productName = ColorsHex;
@@ -149,6 +242,42 @@
 			productReference = 49A68F0D1DEBFB58007F66A0 /* ColorsHexTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		49A68F1F1DEBFB6F007F66A0 /* RAVColorsHex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A68F261DEBFB6F007F66A0 /* Build configuration list for PBXNativeTarget "RAVColorsHex" */;
+			buildPhases = (
+				49A68F1C1DEBFB6F007F66A0 /* Sources */,
+				49A68F1D1DEBFB6F007F66A0 /* Frameworks */,
+				49A68F1E1DEBFB6F007F66A0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAVColorsHex;
+			productName = RAVColorsHex;
+			productReference = 49A68F201DEBFB6F007F66A0 /* libRAVColorsHex.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		49A68F321DEC1AE6007F66A0 /* RAVColorsHexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A68F3B1DEC1AE6007F66A0 /* Build configuration list for PBXNativeTarget "RAVColorsHexTests" */;
+			buildPhases = (
+				49A68F2F1DEC1AE6007F66A0 /* Sources */,
+				49A68F301DEC1AE6007F66A0 /* Frameworks */,
+				49A68F311DEC1AE6007F66A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49A68F3A1DEC1AE6007F66A0 /* PBXTargetDependency */,
+				49A68F421DEC345C007F66A0 /* PBXTargetDependency */,
+			);
+			name = RAVColorsHexTests;
+			productName = RAVColorsHexTests;
+			productReference = 49A68F331DEC1AE6007F66A0 /* RAVColorsHexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,6 +293,17 @@
 						ProvisioningStyle = Automatic;
 					};
 					49A68F0C1DEBFB58007F66A0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BNNY5D4LGB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 49A68EF31DEBFB58007F66A0;
+					};
+					49A68F1F1DEBFB6F007F66A0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BNNY5D4LGB;
+						ProvisioningStyle = Automatic;
+					};
+					49A68F321DEC1AE6007F66A0 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = BNNY5D4LGB;
 						ProvisioningStyle = Automatic;
@@ -186,6 +326,8 @@
 			targets = (
 				49A68EF31DEBFB58007F66A0 /* ColorsHex */,
 				49A68F0C1DEBFB58007F66A0 /* ColorsHexTests */,
+				49A68F1F1DEBFB6F007F66A0 /* RAVColorsHex */,
+				49A68F321DEC1AE6007F66A0 /* RAVColorsHexTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +344,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		49A68F0B1DEBFB58007F66A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A68F311DEC1AE6007F66A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,7 +374,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A68F121DEBFB58007F66A0 /* ColorsHexTests.m in Sources */,
+				49A68F471DEC350E007F66A0 /* RAVTColorComparer.m in Sources */,
+				49A68F461DEC350E007F66A0 /* RAVColorsHexTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A68F1C1DEBFB6F007F66A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A68F2E1DEC0D40007F66A0 /* NSString+RAVHexString.m in Sources */,
+				49A68F2B1DEBFBA5007F66A0 /* UIColor+RAVHex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A68F2F1DEC1AE6007F66A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +402,21 @@
 			isa = PBXTargetDependency;
 			target = 49A68EF31DEBFB58007F66A0 /* ColorsHex */;
 			targetProxy = 49A68F0E1DEBFB58007F66A0 /* PBXContainerItemProxy */;
+		};
+		49A68F3A1DEC1AE6007F66A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49A68F1F1DEBFB6F007F66A0 /* RAVColorsHex */;
+			targetProxy = 49A68F391DEC1AE6007F66A0 /* PBXContainerItemProxy */;
+		};
+		49A68F421DEC345C007F66A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49A68EF31DEBFB58007F66A0 /* ColorsHex */;
+			targetProxy = 49A68F411DEC345C007F66A0 /* PBXContainerItemProxy */;
+		};
+		49A68F441DEC346B007F66A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49A68F1F1DEBFB6F007F66A0 /* RAVColorsHex */;
+			targetProxy = 49A68F431DEC346B007F66A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -356,6 +537,10 @@
 				DEVELOPMENT_TEAM = BNNY5D4LGB;
 				INFOPLIST_FILE = ColorsHex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.home.ColorsHex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -368,6 +553,10 @@
 				DEVELOPMENT_TEAM = BNNY5D4LGB;
 				INFOPLIST_FILE = ColorsHex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.home.ColorsHex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -399,6 +588,56 @@
 			};
 			name = Release;
 		};
+		49A68F271DEBFB6F007F66A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BNNY5D4LGB;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		49A68F281DEBFB6F007F66A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BNNY5D4LGB;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		49A68F3C1DEC1AE6007F66A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BNNY5D4LGB;
+				INFOPLIST_FILE = RAVColorsHexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.home.RAVColorsHexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorsHex.app/ColorsHex";
+			};
+			name = Debug;
+		};
+		49A68F3D1DEC1AE6007F66A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BNNY5D4LGB;
+				INFOPLIST_FILE = RAVColorsHexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.home.RAVColorsHexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorsHex.app/ColorsHex";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,6 +663,22 @@
 			buildConfigurations = (
 				49A68F1A1DEBFB58007F66A0 /* Debug */,
 				49A68F1B1DEBFB58007F66A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49A68F261DEBFB6F007F66A0 /* Build configuration list for PBXNativeTarget "RAVColorsHex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A68F271DEBFB6F007F66A0 /* Debug */,
+				49A68F281DEBFB6F007F66A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49A68F3B1DEC1AE6007F66A0 /* Build configuration list for PBXNativeTarget "RAVColorsHexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A68F3C1DEC1AE6007F66A0 /* Debug */,
+				49A68F3D1DEC1AE6007F66A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
