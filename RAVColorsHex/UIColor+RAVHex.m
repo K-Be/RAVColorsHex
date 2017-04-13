@@ -10,6 +10,10 @@
 #import "NSString+RAVHexString.h"
 @import CoreImage;
 
+#ifndef BYTE_SIZE
+#define BYTE_SIZE (8)
+#endif
+
 //indexes from right
 #define COMPONENT_INDEX_ALPHA (3)
 #define COMPONENT_INDEX_RED (2)
